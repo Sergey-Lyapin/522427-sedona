@@ -19,29 +19,82 @@
                 <li><a href="hotels.html">Гостиницы</a></li>
             </ul>
         </nav>
+        <a class="main-logo"><img src="img/logo.png" alt="Логотип Седоны"></a>
     </header>
     <section class="hotels-parameters">
         <h2>Выбор отелей по параметрам</h2>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post" class="filter-hotels">
+            <fieldset class="infrastructure">
+                <legend>Инфраструктура:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                        <label for="filter-swimming-pool">Бассейн</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                        <label for="filter-parking">Парковка</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                        <label for="filter-wi-fi">Wi-Fi</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="hotel-type">
+                <legend>Тип жилья:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                        <label for="filter-hotel">Гостиница</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                        <label for="filter-motel">Мотель</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+                        <label for="filter-apartment">Апартаменты</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="cost-per-day">
+                <legend>Стоимость в сутки(р):</legend>
+                <div class="price-controls">
+                    <div class="min-price">0</div> |
+                    <div class="max-price">3000</div>
+                </div>
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <button type="button" class="toggle min-toggle"></button>
+                        <button type="button" class="toggle max-toggle"></button>
+                    </div>
+                </div>
+                <input type="submit" value="Показать">
+            </fieldset>
+        </form>
     </section>
     <section class="hotels-sorting">
         <h2>Сортировка:</h2>
         <b>Найдено:<span>3</span></b>
         <ul class="sorting-list">
             <li class="sorting-option">
-                <a class="button-sorting-price">По цене</a>
+                <button class="button-sorting-price">По цене</button>
             </li>
             <li class="sorting-option">
-                <a class="button-sorting-type">По типу</a>
+                <button class="button-sorting-type">По типу</button>
             </li>
             <li class="sorting-option">
-                <a class="button-sorting-rating">По рейтингу</a>
+                <button class="button-sorting-rating">По рейтингу</button>
             </li>
             <li class="sorting-option">
-                <a class="button-up-dir"><span class="hide-text">По возрастанию</span></a>
+                <button class="button-up-dir"><span class="hide-text">По возрастанию</span></button>
             </li>
             <li class="sorting-option">
-                <a class="button-down-dir"><span class="hide-text">По убыванию</span></a>
+                <button class="button-down-dir"><span class="hide-text">По убыванию</span></button>
             </li>
         </ul>
         <button class="sorting-ascending"></button>
@@ -88,9 +141,9 @@
     <footer>
         <p class="footer-hashtag">#visitsedona</p>
         <ul class="footer-social">
-            <li><a class="social-button vk" href="http://vk.com/htmlacademy"></a></li>
-            <li><a class="social-button fb" href="http://www.facebook.com/htmlacademy"></a></li>
-            <li><a class="social-button instagram" href="http://twitter.com/htmlacademy_ru"></a></li>
+            <li><a class="social-button vk" href="http://vk.com/htmlacademy" aria-label="Вконтакте"></a></li>
+            <li><a class="social-button fb" href="http://www.facebook.com/htmlacademy" aria-label="Фейсбук"></a></li>
+            <li><a class="social-button instagram" href="http://twitter.com/htmlacademy_ru" aria-label="Инстаграм"></a></li>
         </ul>
         <div class="developer">
             <p>Website by:</p>

@@ -19,7 +19,7 @@
                 <li><a href="hotels.html">Гостиницы</a></li>
             </ul>
         </nav>
-        <a href="index.html" class="main-logo"><img src="img/logo.png"></a>
+        <a href="index.html" class="main-logo"><img src="img/logo.png" alt="Логотип Седоны"></a>
     </header>
     <main class="container">
         <h1 class="visually-hidden">Описание Седоны</h1>
@@ -79,7 +79,7 @@
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button ">Поиск гостиницы в Седоне</button>
+            <button class="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="main-map">
             <h2 class="visually-hidden">Карта Седоны</h2>
@@ -94,12 +94,23 @@
             </ul>
             <div class="developer">
                 <p>Website by:</p>
-                <a href="htmlacademy.ru"><img src="" alt="Лого htmlacademy"></a>
+                <a href="htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Лого htmlacademy"></a>
             </div>
         </footer>
         <section class="modal modal-hotels">
             <h2>Форма поиска отелей</h2>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="date-arrival">Дата заезда</label>
+                <input type="date" name="date-arrival">
+                <label for="date-departure">Дата выезда</label>
+                <input type="date" name="date-departure">
+                <label for="amount-adults">Взрослые</label>
+                <input type="number" min="0" max="50" step="1" id="amount-adults" name="amount-adults">
+                <label for="amount-children">Дети</label>
+                <input type="number" min="0" max="50" step="1" id="amount-children" name="amount-children">
+                <input type="submit" value="Найти">
+            </form>
+
         </section>
     </main>
 </body>
