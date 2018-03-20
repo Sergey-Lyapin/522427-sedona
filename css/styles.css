@@ -3,8 +3,7 @@ body {
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
+    line-height: 26px;
     color: black;
     text-transform: uppercase;
 }
@@ -13,8 +12,393 @@ a {
     text-decoration: none;
 }
 
+/* Стилизация хедера */
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
     background-color: white;
+}
+
+.main-navigation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-navigation-list a {
+    color: black;
+    font-weight: 700;
+}
+
+.main-navigation-list a:hover {
+    color: #81b3d2;
+}
+
+
+.main-navigation-list a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Стилизация основного содержания */
+
+.sedona-promo {
+
+    background-image: url(../img/sedona-main.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    height: 724px;
+
+}
+
+.sedona-promo b {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sedona-promo p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Стилизация блока преимуществ */
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-list h3 {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages-list p {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages-item {
+    height: 256px;
+}
+
+.advantages-item:nth-of-type(1),
+.advantages-item:nth-of-type(7) {
+    background-color: #81b3d2;
+    width: 400px;
+    color: white;
+}
+
+.advantages-item:nth-of-type(2),
+.advantages-item:nth-of-type(6) {
+    width: 800px;
+}
+
+.advantages-item:nth-of-type(3),
+.advantages-item:nth-of-type(4),
+.advantages-item:nth-of-type(5),
+.advantages-item:nth-of-type(8),
+.advantages-item:nth-of-type(9),
+.advantages-item:nth-of-type(10) {
+    width: 400px;
+}
+
+.advantages-item:nth-of-type(8),
+.advantages-item:nth-of-type(9),
+.advantages-item:nth-of-type(10) {
+    background-color: #eeeeee;
+}
+
+
+.main-hotels b {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.main-hotels p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-hotels button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #766357;
+    color: white;
+    width: 568px;
+    height: 86px;
+    border: none;
+}
+
+.main-hotels button:hover {
+    background-color: #604e43;
+}
+
+.main-hotels button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Стилизация футера */
+
+.main-footer .footer-hashtag {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+
+.footer-social .social-button {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    display: block;
+}
+
+.footer-social .social-button:hover {
+    background-color: #669ec0;
+}
+
+.footer-social .social-button:active {
+    background-color: #5496bd;
+}
+
+.developer p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.developer svg {
+    width: 115px;
+    height: 41px;
+}
+
+svg:hover .htmlacademy-logo {
+    fill: #81b3d2;
+}
+
+svg:active .htmlacademy-logo {
+    fill: #bdbbbc;
+}
+
+label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.modal-hotels input {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.modal-hotels input:hover {
+    background-color: #ebebeb;
+}
+
+.modal-hotels input:focus {
+    background-color: white;
+    outline: none;
+}
+
+.modal-hotels input[type="submit"] {
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: #81b3d2;
+}
+
+.modal-hotels input[type="submit"]:hover {
+    background-color: #669ec0;
+}
+
+.modal-hotels input[type="submit"]:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Стилизация страницы поиска отелей */
+
+/* Стилизация блока с фильтрами */
+
+.hotels-parameters {
+    background-image: url(../img/filter%20background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 1200px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: white;
+}
+
+.filter-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.filter-list label {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    font-weight: 400;
+}
+
+.price-controls {
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.filter-hotels input[type="submit"] {
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-transform: uppercase;
+    height: 32px;
+    width: 133px;
+    border: 2px solid white;
+}
+
+/* Стилизация блока сортировки */
+
+.hotels-sorting {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.sorting-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sorting-list button {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #81b3d2;
+}
+
+.sorting-list .chosen-option {
+    color: #81b3d2;
+    text-decoration: none;
+}
+
+.sorting-list button:hover {
+    color: #81b3d2;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #81b3d2;
+}
+
+.sorting-list button:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* Стилизация списка отелей */
+
+.hotels-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hotels-list h3 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.hotels-list .hotel-name:hover {
+    color: #81b3d2;
+}
+
+.hotels-list .hotel-name:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-list p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.hotels-list .rating-number {
+    color: #666666;
+    background-color: #f2f2f2;
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hotels-list .more-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #81b3d2;
+    width: 110px;
+    height: 27px;
+    display: table-cell;
+}
+
+.hotels-list .more-info:hover {
+    background-color: #669ec0;
+}
+
+.hotels-list .more-info:active {
+    background-color: #5496bd;
+    color: rgba(255, 225, 255, 0.3);
+}
+
+.hotels-list .booking-button {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: #766357;
+    width: 142px;
+    height: 27px;
+    display: table-cell;
+}
+
+.hotels-list .booking-button:hover {
+    background-color: #604e43;
+}
+
+.hotels-list .booking-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
