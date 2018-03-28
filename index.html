@@ -80,6 +80,36 @@
             <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button class="button">Поиск гостиницы в Седоне</button>
+            <section class="modal modal-hotels">
+                <h2 class="visually-hidden">Форма поиска отелей</h2>
+                <form action="https://echo.htmlacademy.ru" method="post" class="hotels-search">
+                    <div class="hotels-search-helper">
+                        <label for="date-arrival">Дата заезда: </label>
+                        <input type="text" name="date-arrival" class="date-input" value="24 АПРЕЛЯ 2017">
+                        <button class="calendar" type="button" title="Календарь" aria-label="Календарь"></button>
+                    </div>
+                    <div class="hotels-search-helper">
+                        <label for="date-departure">Дата выезда: </label>
+                        <input type="text" name="date-departure" class="date-input" value="4 ИЮЛЯ 2017">
+                        <button class="calendar" type="button" title="Календарь" aria-label="Календарь"></button>
+                    </div>
+                    <div class="hotels-amount-helper">
+                        <div class="guests-amount-helper">
+                            <label for="amount-adults">Взрослые: </label>
+                            <button class="quantity-less-adults" type="button" title="Меньше"></button>
+                            <input type="text" id="amount-adults" name="amount-adults" class="guests-amount" value="2">
+                            <button class="quantity-more-adults" type="button" title="Больше"></button>
+                        </div>
+                        <div class="guests-amount-helper">
+                            <label for="amount-children">Дети: </label>
+                            <button class="quantity-less-children" type="button" title="Меньше"></button>
+                            <input type="text" id="amount-children" name="amount-children" class="guests-amount" value="0">
+                            <button class="quantity-more-children" type="button" title="Больше"></button>
+                        </div>
+                    </div>
+                    <input type="submit" value="Найти">
+                </form>
+            </section>
         </section>
         <section class="main-map">
             <h2 class="visually-hidden">Карта Седоны</h2>
@@ -98,30 +128,6 @@
                 </a>
             </div>
         </footer>
-        <section class="modal modal-hotels">
-            <h2 class="visually-hidden">Форма поиска отелей</h2>
-            <form action="https://echo.htmlacademy.ru" method="post" class="hotels-search">
-                <div class="hotels-search-helper">
-                    <label for="date-arrival">Дата заезда: </label>
-                    <input type="date" name="date-arrival">
-                </div>
-                <div class="hotels-search-helper">
-                    <label for="date-departure">Дата выезда: </label>
-                    <input type="date" name="date-departure">
-                </div>
-                <div class="hotels-search-helper">
-                    <div>
-                        <label for="amount-adults">Взрослые: </label>
-                        <input type="number" min="0" max="50" step="1" id="amount-adults" name="amount-adults">
-                    </div>
-                    <div>
-                        <label for="amount-children">Дети: </label>
-                        <input type="number" min="0" max="50" step="1" id="amount-children" name="amount-children">
-                    </div>
-                </div>
-                <input type="submit" value="Найти">
-            </form>
-        </section>
     </main>
 </body>
 
