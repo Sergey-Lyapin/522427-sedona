@@ -116,7 +116,7 @@ a {
 
 .sedona-promo {
     background-image: url(../img/sedona-main.jpg);
-    background-position:;
+    background-color: #1e2f3c;
     margin-top: -56px;
     background-repeat: no-repeat;
     height: 564px;
@@ -393,7 +393,9 @@ a {
 }
 
 .main-map {
+    height: 601px;
     margin-bottom: -8px;
+    background-color: #cbdda9;
 }
 
 /* Стилизация футера */
@@ -771,6 +773,7 @@ label {
 
 .hotels-parameters {
     background-image: url(../img/filter%20background.jpg);
+    background-color: #766357;
     background-repeat: no-repeat;
     background-position: 0% 16%;
     width: 1200px;

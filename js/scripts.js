@@ -4,5 +4,5 @@ var popup = document.querySelector(".modal-hotels");
 hotels_button.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-close");
-  });
+});
 
