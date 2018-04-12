@@ -1,0 +1,1 @@
+var hotels_button=document.querySelector(".main-hotels-button"),popup=document.querySelector(".modal-hotels");hotels_button.addEventListener("click",function(t){t.preventDefault(),popup.classList.toggle("modal-close")});

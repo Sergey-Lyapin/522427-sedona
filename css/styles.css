@@ -305,7 +305,6 @@ a {
 
 .advantages-item:nth-of-type(7) .advantage-description {
     width: 303px;
-    
 }
 
 .advantages-item:nth-of-type(1) h3,
@@ -317,7 +316,6 @@ a {
 .advantages-item:nth-of-type(7) .advantage-description {
     line-height: 21px;
 }
-    
 
 .advantages-item:nth-of-type(5)::before {
     content: "";
@@ -396,7 +394,20 @@ a {
     height: 601px;
     margin-bottom: -8px;
     background-color: #cbdda9;
+    position: relative;
 }
+
+.main-map img {
+    position: absolute;
+    z-index: 1;
+}
+
+.main-map iframe {
+    position: absolute;
+    z-index: 2;
+    border: none;
+}
+
 
 /* Стилизация футера */
 
@@ -415,7 +426,7 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: -128px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 .main-footer-hotels {
@@ -507,21 +518,21 @@ svg:active .htmlacademy-logo {
 /* Стилизация всплывающего окна */
 
 @keyframes bounce {
-  0% {
-    transform: translateX(-2000px);
-  }
+    0% {
+        transform: translateX(-2000px);
+    }
 
-  70% {
-    transform: translateX(30px);
-  }
+    70% {
+        transform: translateX(30px);
+    }
 
-  90% {
-    transform: translateX(-10px);
-  }
+    90% {
+        transform: translateX(-10px);
+    }
 
-  100% {
-    transform: translateX(0);
-  }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .modal-hotels {
@@ -533,6 +544,7 @@ svg:active .htmlacademy-logo {
     top: 291px;
     left: 316px;
     animation: bounce 0.6s;
+    z-index: 5;
 }
 
 .modal-close {
@@ -869,6 +881,7 @@ fieldset legend {
     position: relative;
 }
 
+
 .filter-option input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
     top: 0;
@@ -1015,8 +1028,7 @@ fieldset legend {
 }
 
 .sorting-list li:nth-of-type(2),
-.sorting-list li:nth-of-type(3)
-{
+.sorting-list li:nth-of-type(3) {
     margin-left: 20px;
 }
 
